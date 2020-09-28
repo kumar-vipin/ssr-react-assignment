@@ -1,0 +1,18 @@
+.segment {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    width: 100%;
+    margin: 5px 0;
+    .segment-item {
+        width: 50px;
+        text-align: center;
+        background-color: #c5e09a;
+        padding: 2px;
+        margin: 5px 15px;
+        border-radius: 5px;
+        &.selected {
+            background-color: #7dba01;
+        }
+    }
+}

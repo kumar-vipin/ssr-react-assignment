@@ -1,0 +1,49 @@
+.filter-wrapper {
+    width: 160px;
+    height: 450px;
+    box-shadow: 1px 1px 1px 1px #ddd;
+    background-color: #ffffff;
+
+    h3 {
+        margin: 0;
+    }
+
+    .filter-label {
+        margin: 0 30px;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            bottom: -2px;
+            box-shadow: 0 1px 0 0 #aaa;
+        }
+    }
+
+    .filter-launch-year {
+        width: 100%;
+        margin: 5px 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        .year {
+            width: 50px;
+            text-align: center;
+            background-color: #c5e09a;
+            padding: 2px;
+            margin: 5px 15px;
+            border-radius: 5px;
+            &.selected {
+                background-color: #7dba01;
+            }
+        }
+    }
+    .filter-successful-launch {
+    }
+    .filter-successful-landing {
+    }
+}
